@@ -19,10 +19,39 @@ switch (cpuNumber) {
 } 
 // cpuNumber 0 = 'scissors, 1 = 'paper', 2 = 'rock'
 
-function playRound(cpuSelection, playerSelection){
+function playRound(cpuSelection, playerSelection) {
+switch (cpuSelection) {
+case cpuSelection == playerSelection:
+text = "Tie";
+break;
+case (cpuSelection = "scissors") && (playerSelection = "paper"):
+text = "scissors cut paper";
+break;
+case (cpuSelection = "scissors") && (playerSelection = "rock"):
+text = "rock crushes scissors";
+break;
+case (cpuSelection = "paper") && (playerSelection = "scissors"):
 
 
 
-}
+
+
   
+
+ }
+
+ }
+      
+
+
+
+  
+
+
+
+
+
+ const playerSelection = "";
+ const cpuSelection = computerPlay();
+ console.log(playRound(cpuSelection, playerSelection));
 
