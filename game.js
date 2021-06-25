@@ -5,30 +5,41 @@ array[Math.floor(Math.random()*3)];
 return computerSelection;
 } 
 function playRound(playerSelection, computerSelection){
-  var result;
+
 switch (playerSelection){
-  case 'scissors' || 'paper' || 'rock':
-   if ((playerSelection == 'scissors' && computerSelection == 'paper') ||
-  (playerSelection == 'paper' && computerSelection == 'rock') ||
-  (playerSelection == 'rock' && computerSelection == 'scissors'));
-  result = 'You Win! you played {playerSelection} and computer played {computerSelection}';
-  break;
+case 'scissors':
+  if (computerSelection == 'paper')
+  return "Winner!";
+  else if (computerSelection == 'rock')
+  return "You Lose";
+  else 
+  return 'Tie!'
 
-  case 'scissors' || 'paper' || 'rock':
-   if ((playerSelection == 'scissors' && computerSelection == 'scissors') ||
-  (playerSelection == 'paper' && computerSelection == 'paper') ||
-  (playerSelection == 'rock' && computerSelection == 'rock'));
-  result = 'Tie! You played {playerSelection} and computer played {computerSelection}';
-  break;
+case 'paper':
+  if (computerSelection == 'rock')
+  return "Winner!";
+  else if (computerSelection == 'scissors')
+  return "You Lose";
+  else 
+  return "Tie"
 
-  default:
-  result = 'You Lose! You played {playerSelection} and computer played {computerSelection}'; 
-  break;
+case 'rock':
+  if (computerSelection == 'scissors')
+  return "Winner!";
+  else if (computerSelection == 'paper')
+  return "You Lose";
+  else 
+  return "Tie"
 
 }
-          
-
 }
-const playerSelection = "rock";
+
+
+const playerInput = "PAPER";
+const playerSelection = playerInput.toLowerCase();
 const cpuSelection = computerPlay();
-// console.log(playRound(playerSelection, computerSelection)); 
+console.log(playRound(playerSelection, computerSelection)); 
+
+function game(){
+
+}
