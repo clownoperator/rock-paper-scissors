@@ -40,7 +40,7 @@ console.log(playRound(playerSelection, computerSelection));
 function game(){
 
 
-for (let i = 0; i < 5; i++) playRound(i);
+// for (let i = 0; i < 5; i++) playRound(i);
 
 }
 let game = function() {
