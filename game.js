@@ -9,7 +9,7 @@ function playRound(playerSelection, computerSelection){
 switch (playerSelection){
 case 'scissors':
   if (computerSelection == 'paper')
-    return 'Winner!';
+  return 'Winner!';
   else if (computerSelection == 'rock')
   return 'You Lost';
   else 
@@ -34,16 +34,14 @@ case 'rock':
 }
 
 }
-const playerSelection = "rock";
 const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
 function game(){
 
 
-// for (let i = 0; i < 5; i++) playRound(i);
+for (let i = 0; i < 5; i++) playRound(i);
 
 }
-let game = function() {
+let round = function() {
 let computerTally = 0;
 let playerTally = 0;
 
@@ -68,4 +66,4 @@ else {
 }
 }
 }
-console.log(game());
+console.log(round());
